@@ -1,0 +1,224 @@
+/* ============================================================================== */
+/* FILE: static/welcome_style.css (PHIÊN BẢN CHUYÊN NGHIỆP)                     */
+/* ============================================================================== */
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #f8f9fa;
+    --text-color: #555;
+    --heading-color: #2c3e50;
+    --light-gray: #ecf0f1;
+    --border-radius: 12px;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.logo i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-section .subtitle {
+    font-size: 1.3em;
+    font-weight: 300;
+    color: var(--text-color);
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.version-info {
+    font-size: 0.9em;
+    color: #95a5a6;
+    margin-top: 15px;
+}
+
+.cta-button, .cta-button-secondary {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(52, 152, 219, 0.6);
+}
+
+.cta-button-secondary {
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+}
+
+.cta-button-secondary:hover {
+    background-color: #bdc3c7;
+    transform: translateY(-2px);
+}
+
+.cta-button i, .cta-button-secondary i {
+    margin-right: 10px;
+}
+
+.features-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: var(--heading-color);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i {
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+
+.download-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    margin-top: 40px;
+}
+
+.download-section h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.download-section p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.main-footer {
+    padding: 40px 0 20px 0;
+    text-align: center;
+    color: #95a5a6;
+    border-top: 1px solid var(--light-gray);
+    margin-top: 60px;
+}
+
+.main-footer .contact-info {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+    
+    nav a {
+        margin: 0 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1.1em;
+    }
+}
